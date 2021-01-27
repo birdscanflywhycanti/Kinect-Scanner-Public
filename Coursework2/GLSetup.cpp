@@ -1,5 +1,4 @@
 #include "GLSetup.h"
-#include "main.h"
 
 void draw() {
    drawKinectData();

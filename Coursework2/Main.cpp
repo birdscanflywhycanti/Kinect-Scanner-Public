@@ -1,5 +1,4 @@
 #include "GLSetup.h"
-#include "Main.h"
 
 //OpenGL includes
 #include "GLFW/glfw3.h"

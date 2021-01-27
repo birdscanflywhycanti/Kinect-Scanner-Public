@@ -5,6 +5,10 @@
 #include <gl/GLU.h>
 #include <gl/glut.h>
 
+const int width = 640;
+const int height = 480;
+
+void drawKinectData();
 bool init(int argc, char* argv[]);
 void draw();
 void execute();

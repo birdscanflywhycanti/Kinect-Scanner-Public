@@ -139,12 +139,12 @@ void rotateCamera() {
 	gluLookAt(x,0,z,0,0,radius/2,0,1,0);
 
 	//Control amount of rotation
-	angle = sin(count)/1.2;
+	angle = sin(count)/3;
 	// Control Speed of rotation
 	count += 0.08;
 }
 
-//
+// Display array of points onto screen
 void drawKinectData() {
 	getKinectData();
 	rotateCamera();
@@ -159,7 +159,9 @@ void drawKinectData() {
 	glBindBuffer(GL_ARRAY_BUFFER, cboId);
 	glColorPointer(3, GL_FLOAT, 0, NULL);
 
+	//Size of individual points
 	glPointSize(2.f);
+
 	glDrawArrays(GL_POINTS, 0, width*height);
 
 	glDisableClientState(GL_VERTEX_ARRAY);
@@ -198,11 +200,9 @@ int main(int argc, char* argv[]) {
     glClearDepth(1.0f);
 
 	bufferSetup();
-
 	cameraSetup();
 
-
-    execute();
+    execute(); // Begin main loop
     return 0;
 }
 

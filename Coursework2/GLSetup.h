@@ -9,6 +9,8 @@ const int width = 640;
 const int height = 480;
 
 void drawKinectData();
+void loadDepth(long*& lDepthToRgbMap, float*& fdest, const BYTE* start);
+void loadRgb(const USHORT*& curr, float*& fdest, long*& lDepthToRgbMap);
 bool init(int argc, char* argv[]);
 void draw();
 void execute();

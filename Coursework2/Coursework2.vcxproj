@@ -149,7 +149,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GLSetup.h" />
-    <ClInclude Include="Main.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

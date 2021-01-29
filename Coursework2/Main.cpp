@@ -11,6 +11,7 @@
 #include <string>
 #include <iostream>
 
+#include "Main.h"
 // OpenGL Variables
 long depthToRgbMap[width*height*2];
 
@@ -123,7 +124,8 @@ void getData(GLubyte* dest, HANDLE *stream, std::string type)
 }
 
 // Copy kinect data to GPU
-void getKinectData() {
+void getKinectData() 
+{
 	GLubyte* ptr;
 	glBindBuffer(GL_ARRAY_BUFFER, vboId);
 	ptr = (GLubyte*) glMapBuffer(GL_ARRAY_BUFFER, GL_WRITE_ONLY);
@@ -139,7 +141,8 @@ void getKinectData() {
 	glUnmapBuffer(GL_ARRAY_BUFFER);
 }
 
-void rotateCamera() {
+void rotateCamera()
+{
 	static double count = 0;
 	static double angle = 0.;
 	static double radius = 4.;
@@ -156,7 +159,8 @@ void rotateCamera() {
 }
 
 // Display array of points onto screen
-void drawKinectData() {
+void drawKinectData() 
+{
 	getKinectData();
 	rotateCamera();
 

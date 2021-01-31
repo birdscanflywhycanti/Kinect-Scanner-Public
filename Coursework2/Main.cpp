@@ -1,7 +1,6 @@
 #include "GLSetup.h"
 
 //OpenGL includes
-#include "GLFW/glfw3.h"
 #include <glm/glm.hpp> 
 
 //Kinect SDK includes
@@ -78,7 +77,7 @@ void storeRGBDataAtPoint(long*& ldepthToRgbMap, float*& fdest, const BYTE* start
 	}
 }
 
-void loadDepth(long*& lDepthToRgbMap, float*& fdest, const BYTE* start)
+void loadRgb(long*& lDepthToRgbMap, float*& fdest, const BYTE* start)
 {
 	//Loop through and store for all points
 	for (int j = 0; j < height; ++j) {
@@ -88,7 +87,7 @@ void loadDepth(long*& lDepthToRgbMap, float*& fdest, const BYTE* start)
 	}
 }
 
-void loadRgb(const USHORT*& curr, float*& fdest, long*& lDepthToRgbMap)
+void loadDepth(const USHORT*& curr, float*& fdest, long*& lDepthToRgbMap)
 {
 	//Loop through and store for all points
 	for (int j = 0; j < height; ++j) {
@@ -111,12 +110,12 @@ void getData(GLubyte* dest, HANDLE *stream, std::string type)
 		if (type == "rgb")
 		{
 			const BYTE* start = (const BYTE*)LockedRect.pBits;
-			loadDepth(lDepthToRgbMap, fdest, start);
+			loadRgb(lDepthToRgbMap, fdest, start);
 		}
 		else if (type == "depth")
 		{
 			const USHORT* curr = (const USHORT*)LockedRect.pBits;
-			loadRgb(curr, fdest, lDepthToRgbMap);
+			loadDepth(curr, fdest, lDepthToRgbMap);
 		}
 	}
 	texture->UnlockRect(0); //unlock

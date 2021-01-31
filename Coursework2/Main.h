@@ -1,6 +1,6 @@
 #pragma once
-void loadDepth(long*& lDepthToRgbMap, float*& fdest, const BYTE* start);
-void loadRgb(const USHORT*& curr, float*& fdest, long*& lDepthToRgbMap);
+void loadRgb(long*& lDepthToRgbMap, float*& fdest, const BYTE* start);
+void loadDepth(const USHORT*& curr, float*& fdest, long*& lDepthToRgbMap);
 int kinectSetup();
 void storeDepthAtPoint(const USHORT*& curr, int width, int height, float*& fdest, long*& depth2rgb);
 void storeRGBDataAtPoint(long*& ldepthToRgbMap, float*& fdest, const BYTE* start);

@@ -28,9 +28,11 @@ The function `getKinectData()` allocates some GPU memory and loads in data via t
 Originally I had intended to use Kinect Fusion (https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ismar2011.pdf) to model things the kinect sees in 3D. However, I later found that Kinect Fusion will **only** would with DirectX and not OpenGL. 
 I came up with the idea for this project after exploring the Kinect Developer Toolkit Browser and seeing some of the showcase examples. All of the examples made use of DirectX rather than OpenGL. As such, I decided that I would pick a graphics example and recreate it from scratch using OpenGL. As the Kinect Fusion idea was not feasible, I decided to make use of a different approach to the project that would still fulfill my project pitch: To use individual point depth and colour data to plot what the kinect sees in 3D using OpenGL. 
 I did not start with a given project, however I did make heavy use of the gettng started section of the Microsoft Kinect SDK1.8 documentation https://docs.microsoft.com/en-us/previous-versions/windows/kinect-1.8/hh855352(v=ieb.10) and used https://homes.cs.washington.edu/~edzhang/tutorials/kinect/kinect1.html for support with the OpenGL functionality. 
+#Solution to be opened
+There is only one solution file inside `/2020-comp3016-cw2-luckychan12-main` called `“Coursework2.sln”`
 
-# How to run:
-Program executable is ready to run
+# How to run exe:
+Program executable is ready to run.
 
 # Link to video:
 https://liveplymouthac-my.sharepoint.com/:v:/g/personal/ivan_chan_students_plymouth_ac_uk/EbH-KDz00WpEpFwW7Ap-dOgBfqwWViISGFmwlyWvoQauEg?e=OczTdM

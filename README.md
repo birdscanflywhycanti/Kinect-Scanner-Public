@@ -3,7 +3,6 @@
 - Kinect SDK 1.8
 - FreeGlut
 - Glew
-- GLFW
 - GLM
 
 ## How to use:

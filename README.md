@@ -13,7 +13,7 @@ Connect XBox 360 Kinect to device and run the program. A window will pop up that
 The program first starts by initializing the Kinect and creating two image streams. One to retrieve the depth data and another to retrieve the colour data. The software then loads the depth data and the colour data from the image streams and stores them into two buffer objects. Because the colour and depth sensors are physically separate sensors, the function `NuiImageGetColorPixelCoordinatesFromDepthPixelAtResolution` is used to align the position of each depth pixel with the correct corrisonding colour pixel. This Data is then drawn to the screen and updated in the `glutMainLoop`. The camera oscilates rotating an arc of 90 degrees around the model. This allows you to more clearly see the depth.
 
 
-## How do the functons fit together
+## How do the functions fit together
 The program start off in the `main()` function. It first calls `KinectSetup()` This initialises the XBox 360 Kinect that is connected to the device and sets up sensor streams.
 The `main()` function then calls `init()` which creates the output window and sets up the glut main loop. The `draw()` function is passed into both the `glutDisplayFunc()` and the `glutIdleFunc()`. This tells the program loop and call `draw()` to update the window output. 
 The `draw()` function calls `drawKinectData()` and moves the back buffer forwards. 

@@ -32,7 +32,7 @@ I did not start with a given project, however I did make heavy use of the gettng
 There is only one solution file inside `/2020-comp3016-cw2-luckychan12-main` called `“Coursework2.sln”`
 
 # How to run exe:
-Program executable is ready to run.
+Program executable is ready to run after connecting 1 Xbox 360 Kinect sensor.
 
 # Link to video:
 https://liveplymouthac-my.sharepoint.com/:v:/g/personal/ivan_chan_students_plymouth_ac_uk/EbH-KDz00WpEpFwW7Ap-dOgBfqwWViISGFmwlyWvoQauEg?e=OczTdM

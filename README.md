@@ -44,7 +44,7 @@ Program executable is ready to run after connecting a single Xbox 360 Kinect sen
 # How to setup project for compiling in visual studio:
 Ensure the Kinect SDK 1.8 is installed on the machine.
 Set the include and library path of the project to the Kinect SDK files
-![Screenshot of project properties](https://i.imgur.com/BC4p2l2.png)
+![Screenshot of project properties](https://i.imgur.com/xWZ4Mlc.png)
 Set the linker library location. 
 Use *C:\Program Files\Microsoft SDKs\Kinect\v1.8\lib\amd64* for 64 bit machines and *...\lib\x86* for 32 bit machines
 ![Screenshot of linker properties](https://i.imgur.com/lKFWzIg.png)

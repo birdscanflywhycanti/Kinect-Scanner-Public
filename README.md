@@ -1,4 +1,10 @@
 # 2020-COMP3016-Coursework2
+
+# Link to video:
+https://youtu.be/sHo4lMAl32g 
+
+## Kinect room scanner
+![Gif of product running](https://lasagna.cat/i/da55iuxo.gif)
 ## Libraries used:
 - Kinect SDK 1.8
 - FreeGlut
@@ -31,8 +37,18 @@ I did not start with a given project, however I did make heavy use of the gettng
 # Solution to be opened
 There is only one solution file inside `/2020-comp3016-cw2-luckychan12-main` called `“Coursework2.sln”`
 
-# How to run exe:
-Program executable is ready to run after connecting 1 Xbox 360 Kinect sensor.
+# How to run compiled exe:
+(Ensure kinect 1.8 SDK is installed)
+Program executable is ready to run after connecting a single Xbox 360 Kinect sensor.
 
-# Link to video:
-https://liveplymouthac-my.sharepoint.com/:v:/g/personal/ivan_chan_students_plymouth_ac_uk/EbH-KDz00WpEpFwW7Ap-dOgBfqwWViISGFmwlyWvoQauEg?e=OczTdM
+# How to setup project for compiling in visual studio:
+Ensure the Kinect SDK 1.8 is installed on the machine.
+Set the include and library path of the project to the Kinect SDK files
+![Screenshot of project properties](https://i.imgur.com/BC4p2l2.png)
+Set the linker library location. 
+Use *C:\Program Files\Microsoft SDKs\Kinect\v1.8\lib\amd64* for 64 bit machines and *...\lib\x86* for 32 bit machines
+![Screenshot of linker properties](https://i.imgur.com/lKFWzIg.png)
+Add *kinect10.lib* to linker dependencies 
+![Screenshot of linker properties](https://i.imgur.com/SctoD8u.png)
+
+

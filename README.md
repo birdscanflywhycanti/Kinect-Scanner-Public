@@ -1,4 +1,4 @@
-# 2020-COMP3016-Coursework2
+# X-Box Kinect 3D Romm scanner written in C++ with OpenGL
 
 # Link to video:
 https://youtu.be/sHo4lMAl32g 

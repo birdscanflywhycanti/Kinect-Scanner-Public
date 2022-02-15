@@ -4,7 +4,7 @@
 https://youtu.be/sHo4lMAl32g 
 
 ## Kinect room scanner
-![Gif of product running](https://lasagna.cat/i/da55iuxo.gif)
+Gif of product running: https://lasagna.cat/i/da55iuxo.gif
 ## Libraries used:
 - Kinect SDK 1.8
 - FreeGlut
